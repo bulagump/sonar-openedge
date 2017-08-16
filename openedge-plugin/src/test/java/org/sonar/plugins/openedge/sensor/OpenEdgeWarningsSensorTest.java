@@ -40,7 +40,7 @@ public class OpenEdgeWarningsSensorTest {
     OpenEdgeWarningsSensor sensor = new OpenEdgeWarningsSensor(oeSettings);
     sensor.execute(context);
 
-    Assert.assertEquals(1, context.allIssues().size());
+    Assert.assertEquals(context.allIssues().size(), 2);
   }
 
   private ActiveRules createRules() {
